@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahmoud Hossam Abd ELMoaty - Cybersecurity Engineer specializing in ethical hacking, network security, and system protection.">
+    <meta name="keywords" content="Cybersecurity, Ethical Hacking, Penetration Testing, Network Security, Python, Java, C++">
+    <meta name="author" content="Mahmoud Hossam Abd ELMoaty">
+    
+
+    <meta property="og:title" content="Mahmoud Hossam - Cybersecurity Engineer">
+    <meta property="og:description" content="A responsible and motivated engineering student specializing in programming and cybersecurity.">
+    <meta property="og:image" content="assets/Forma_ph.png">
+    <meta property="og:url" content="https://mahmoud-hossam1.github.io">
+    <meta property="og:type" content="website">
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mahmoud Hossam - Cybersecurity Engineer">
+    <meta name="twitter:description" content="A responsible and motivated engineering student specializing in programming and cybersecurity.">
+    
+    <title>Mahmoud Hossam | Cybersecurity Engineer</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+
+            <a href="#hero" class="nav-logo" aria-label="Home">
+                <span class="logo-text">MH</span>
+            </a>
+            
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#certificates" class="nav-link" role="menuitem">Certificates</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+            </ul>
+            
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <section class="hero" id="hero">
+
+        <div class="hero-bg">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="cyber-grid"></div>
+        </div>
+        
+        <div class="hero-container">
+
+            <div class="hero-image-wrapper">
+                <div class="hero-image">
+                    <img src="assets/Forma_ph.png" alt="Mahmoud Hossam Abd ELMoaty - Cybersecurity Engineer" loading="eager" id="profileImg">
+                    <div class="image-border"></div>
+                </div>
+
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span>Available for hire</span>
+                </div>
+            </div>
+            
+
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name" id="heroName">Mahmoud Hossam Abd ELMoaty</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix">I'm a</span>
+                    <span class="hero-title" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    A responsible and motivated engineering student specializing in programming and cybersecurity. 
+                    Highly interested in ethical hacking, network security, and system protection.
+                </p>
+                
+
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Get In Touch
+                    </a>
+                    <a href="#projects" class="btn btn-secondary">
+                        <i class="fas fa-folder-open"></i>
+                        View Projects
+                    </a>
+                </div>
+                
+
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/mahmoud-hossam1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Mahmoud-hossam1" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mohdhosam11@gmail.com" aria-label="Email" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </a>
+    </section>
+    
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text reveal-left">
+                    <p class="about-lead">
+                        I'm a <strong>Computer Engineering student</strong> at Al Alamein International University, 
+                        passionate about building secure systems and protecting digital infrastructure.
+                    </p>
+                    <p>
+                        My journey in cybersecurity began with a curiosity about how systems can be both built and broken. 
+                        This led me to explore ethical hacking, penetration testing, and network security. I'm committed 
+                        to continuous learning in cyber defense and emerging technologies, always staying ahead of the 
+                        latest threats and security practices.
+                    </p>
+                    <p>
+                        Beyond technical skills, I value teamwork and believe in sharing knowledge with the community. 
+                        I've been actively involved in student organizations and volunteer work, which has strengthened 
+                        my communication and leadership abilities.
+                    </p>
+                    
+
+                    <div class="about-facts">
+                        <div class="fact">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Alexandria, Egypt</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Computer Engineering</span>
+                        </div>
+                        <div class="fact">
+                            <i class="fas fa-language"></i>
+                            <span>Arabic, English, German, Italian</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats reveal-right">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Certificates</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-count="9">0</span>
+                            <span class="stat-label">Courses Completed</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">Organizations</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-number" data-count="6">0</span>
+                            <span class="stat-label">Programming Languages</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">What I can do</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-content">
+
+                <div class="skill-category reveal-up" data-delay="0">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-items" id="programmingSkills">
+
+                    </div>
+                </div>
+                
+
+                <div class="skill-category reveal-up" data-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-items" id="webSkills">
+
+                    </div>
+                </div>
+                
+
+                <div class="skill-category reveal-up" data-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <div class="skill-items" id="securitySkills">
+
+                    </div>
+                </div>
+                
+
+                <div class="skill-category reveal-up" data-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-items" id="toolsSkills">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Experience & Education</h2>
+                <div class="section-line"></div>
+            </div>
+            
+
+            <div class="timeline-tabs reveal-up">
+                <button class="tab-btn active" data-tab="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    Education
+                </button>
+                <button class="tab-btn" data-tab="organizations">
+                    <i class="fas fa-users"></i>
+                    Organizations
+                </button>
+                <button class="tab-btn" data-tab="volunteer">
+                    <i class="fas fa-hand-holding-heart"></i>
+                    Volunteer
+                </button>
+            </div>
+            
+
+            <div class="timeline-container">
+
+                <div class="timeline-content active" id="education-tab">
+                    <div class="timeline">
+                        <div class="timeline-item reveal-left">
+                            <div class="timeline-marker">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="card-header">
+                                    <h3>Computer Engineering</h3>
+                                    <span class="card-date">2022 - 2027</span>
+                                </div>
+                                <p class="card-institution">Al Alamein International University</p>
+                                <p class="card-location"><i class="fas fa-map-marker-alt"></i> Alamein, Egypt</p>
+                                <p class="card-description">
+                                    Pursuing a Bachelor's degree in Computer Engineering with a focus on cybersecurity 
+                                    and software development. Active participant in university tech clubs and hackathons.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="timeline-content" id="organizations-tab">
+                    <div class="timeline">
+                        <div class="timeline-item reveal-left">
+                            <div class="timeline-marker">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="card-header">
+                                    <h3>AIU Student Union</h3>
+                                    <span class="card-date">2024 - 2025</span>
+                                </div>
+                                <p class="card-role">Organizing Member</p>
+                                <p class="card-description">
+                                    Organizing and coordinating student events, workshops, and activities. 
+                                    Working with team members to enhance student engagement and campus life.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item reveal-right">
+                            <div class="timeline-marker">
+                                <i class="fas fa-campground"></i>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="card-header">
+                                    <h3>AIU Student Union</h3>
+                                    <span class="card-date">2022 - 2025</span>
+                                </div>
+                                <p class="card-role">Scouts Committee Member</p>
+                                <p class="card-description">
+                                    Participating in outdoor activities, leadership programs, and community service 
+                                    initiatives. Developing teamwork and organizational skills.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item reveal-left">
+                            <div class="timeline-marker">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="card-header">
+                                    <h3>The Center for Student Welfare</h3>
+                                    <span class="card-date">2022 - 2025</span>
+                                </div>
+                                <p class="card-role">Volunteer</p>
+                                <p class="card-description">
+                                    Supporting student welfare initiatives and contributing to community outreach programs. 
+                                    Assisting with admission and registration office activities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="timeline-content" id="volunteer-tab">
+                    <div class="timeline">
+                        <div class="timeline-item reveal-left">
+                            <div class="timeline-marker">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div class="timeline-card">
+                                <div class="card-header">
+                                    <h3>Admission & Registration Office</h3>
+                                    <span class="card-date">2024</span>
+                                </div>
+                                <p class="card-institution">The Center for Student Welfare</p>
+                                <p class="card-description">
+                                    Volunteered at the Admission and Registration Office, helping new students 
+                                    with enrollment processes and providing guidance on university procedures.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROJECTS SECTION
+         Filterable project grid with modals
+    ======================================== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Projects & Portfolio</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="project-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="security">Security</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="programming">Programming</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+            
+            <!-- View More Button -->
+            <div class="projects-cta reveal-up">
+                <a href="https://github.com/Mahmoud-hossam1" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    View More on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CERTIFICATES SECTION
+         Certificate cards with details
+    ======================================== -->
+    <section class="section certificates" id="certificates">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Achievements</span>
+                <h2 class="section-title">Certificates & Courses</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <!-- Certificate Cards -->
+            <div class="certificates-grid" id="certificatesGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT SECTION
+         Contact form and info
+    ======================================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Get in touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info reveal-left">
+                    <h3>Let's Connect!</h3>
+                    <p>
+                        I'm always open to discussing new projects, creative ideas, or opportunities 
+                        to be part of your vision. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-details">
+                        <a href="mailto:mohdhosam11@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value" id="contactEmail">mohdhosam11@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+201099574793" class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+20 109 957 4793</span>
+                            </div>
+                        </a>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Alexandria, Egypt</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="contact-socials">
+                        <a href="https://linkedin.com/in/mahmoud-hossam1" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Mahmoud-hossam1" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Form Success Message -->
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Message Sent!</h4>
+                        <p>Thank you for reaching out. I'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         Copyright and quick links
+    ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">MH</span>
+                    <p>Cybersecurity Engineer</p>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/mahmoud-hossam1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Mahmoud-hossam1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:mohdhosam11@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Mahmoud Hossam Abd ELMoaty. All rights reserved.</p>
+                <p class="footer-credit">Built with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         PROJECT MODAL
+         Popup for project details
+    ======================================== -->
+    <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="" alt="" id="modalImage" loading="lazy">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p class="modal-category" id="modalCategory"></p>
+                    <p class="modal-description" id="modalDescription"></p>
+                    <div class="modal-tech" id="modalTech"></div>
+                    <div class="modal-links" id="modalLinks"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         BACK TO TOP BUTTON
+    ======================================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
