@@ -1,7 +1,7 @@
 const siteData = {
     name: "Mahmoud Hossam Abd ELMoaty",
     title: "Cybersecurity Engineer",
-    email: "mohdhosam11@gmail.com",
+    email: "mahmoudhossam.eng@gmail.com",
     phone: "+20 109 957 4793",
     location: "Alexandria, Egypt",
     
@@ -96,7 +96,7 @@ const siteData = {
             title: "Task Management App",
             category: "programming",
             description: "A Java-based desktop application for task and project management with team collaboration features.",
-            fullDescription: "Developed a comprehensive task management system using Java and JavaFX. Features include project organization, deadline tracking, team assignment, and progress reporting.",
+            fullDescription: "Developed a comprehensive task management system using Java and JavaFX. Features include project planning, deadline tracking, team assignment, and progress reporting.",
             image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
             tech: ["Java", "JavaFX", "MySQL"],
             github: "https://github.com/Mahmoud-hossam1",
@@ -208,6 +208,13 @@ function initNavigation() {
     const navToggle = document.getElementById('navToggle');
     const navMenu = document.getElementById('navMenu');
     const navLinks = document.querySelectorAll('.nav-link');
+
+    function setMenuState(isOpen) {
+        navToggle.classList.toggle('active', isOpen);
+        navMenu.classList.toggle('active', isOpen);
+        navToggle.setAttribute('aria-expanded', isOpen);
+        document.body.classList.toggle('no-scroll', isOpen && window.innerWidth <= 768);
+    }
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -220,22 +227,25 @@ function initNavigation() {
     });
     
     navToggle.addEventListener('click', () => {
-        navToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        navToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+        const isOpen = !navMenu.classList.contains('active');
+        setMenuState(isOpen);
     });
     
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            navMenu.classList.remove('active');
+            setMenuState(false);
         });
     });
     
     document.addEventListener('click', (e) => {
         if (!navbar.contains(e.target) && navMenu.classList.contains('active')) {
-            navToggle.classList.remove('active');
-            navMenu.classList.remove('active');
+            setMenuState(false);
+        }
+    });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            document.body.classList.remove('no-scroll');
         }
     });
 }
@@ -391,7 +401,6 @@ function populateSkills(containerId, skills) {
         skillItem.innerHTML = `
             <div class="skill-info">
                 <span class="skill-name">${skill.name}</span>
-                <span class="skill-percent">${skill.percent}%</span>
             </div>
             <div class="skill-bar">
                 <div class="skill-progress" data-width="${skill.percent}"></div>
