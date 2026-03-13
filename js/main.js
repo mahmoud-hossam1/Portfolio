@@ -20,29 +20,29 @@ const siteData = {
     
     skills: {
         programming: [
-            { name: "Python", percent: 85 },
-            { name: "Java", percent: 80 },
-            { name: "C++", percent: 75 },
-            { name: "Assembly", percent: 60 }
+            "Python",
+            "Java",
+            "C++",
+            "Assembly"
         ],
         web: [
-            { name: "HTML/CSS", percent: 85 },
-            { name: "JavaScript", percent: 75 },
-            { name: "Node.js", percent: 70 },
-            { name: "MySQL", percent: 75 }
+            "HTML/CSS",
+            "JavaScript",
+            "Node.js",
+            "MySQL"
         ],
         security: [
-            { name: "Penetration Testing", percent: 80 },
-            { name: "Network Security", percent: 85 },
-            { name: "Vulnerability Assessment", percent: 80 },
-            { name: "Ethical Hacking", percent: 85 }
+            "Penetration Testing",
+            "Network Security",
+            "Vulnerability Assessment",
+            "Ethical Hacking"
         ],
         tools: [
-            { name: "Linux/Kali Linux", percent: 90 },
-            { name: "Wireshark", percent: 85 },
-            { name: "Nmap", percent: 85 },
-            { name: "Metasploit", percent: 75 },
-            { name: "Burp Suite", percent: 80 }
+            "Linux/Kali Linux",
+            "Wireshark",
+            "Nmap",
+            "Metasploit",
+            "Burp Suite"
         ]
     },
     
@@ -376,49 +376,22 @@ function initSkills() {
     populateSkills('webSkills', siteData.skills.web);
     populateSkills('securitySkills', siteData.skills.security);
     populateSkills('toolsSkills', siteData.skills.tools);
-    
-    const skillsSection = document.getElementById('skills');
-    let animated = false;
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !animated) {
-                animated = true;
-                animateSkillBars();
-            }
-        });
-    }, { threshold: 0.3 });
-    
-    observer.observe(skillsSection);
 }
 
 function populateSkills(containerId, skills) {
     const container = document.getElementById(containerId);
-    
-    skills.forEach(skill => {
-        const skillItem = document.createElement('div');
-        skillItem.className = 'skill-item';
-        skillItem.innerHTML = `
-            <div class="skill-info">
-                <span class="skill-name">${skill.name}</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" data-width="${skill.percent}"></div>
-            </div>
-        `;
-        container.appendChild(skillItem);
-    });
-}
 
-function animateSkillBars() {
-    const progressBars = document.querySelectorAll('.skill-progress');
-    
-    progressBars.forEach((bar, index) => {
-        const width = bar.getAttribute('data-width');
-        setTimeout(() => {
-            bar.style.width = `${width}%`;
-        }, index * 100);
+    const skillList = document.createElement('ul');
+    skillList.className = 'skill-list';
+
+    skills.forEach(skill => {
+        const listItem = document.createElement('li');
+        listItem.className = 'skill-list-item';
+        listItem.textContent = skill;
+        skillList.appendChild(listItem);
     });
+
+    container.appendChild(skillList);
 }
 
 
